@@ -1,0 +1,27 @@
+.todo {
+  transform: scaleX(0.95);
+  transition: 0.3s all;
+}
+
+.todo:hover {
+  transform: scaleX(1);
+}
+
+.active {
+  background-color: #ffffff;
+}
+.passive {
+  background-color: hsla(0, 0%, 98%, 0.55);
+}
+
+.todo:hover div {
+  opacity: 1;
+}
+
+.todo div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  opacity: 0;
+  transition: 0.3s all ease;
+}
